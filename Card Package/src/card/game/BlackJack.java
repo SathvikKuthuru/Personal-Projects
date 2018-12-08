@@ -5,7 +5,7 @@ import java.util.Scanner;
 import card.util.*;
 
 
-public class BlackJack {
+public class BlackJack implements Game{
 	static Scanner scan = new Scanner(System.in);
 	
 	Deck dealer;
