@@ -28,6 +28,10 @@ public class Parser {
 		int e = 0;
 		this.index++;
 		while (true) {
+			if(this.rawData[this.index] == ' ') {
+				this.index++;
+				continue;
+			}
 			if (this.rawData[this.index] == '[')
 				b++;
 			else if (this.rawData[this.index] == ']')
