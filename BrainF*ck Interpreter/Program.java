@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Program {
-	String input;
+	String input = "";
 	Parser parser;
 	Interpreter interpreter;
 
@@ -18,6 +18,7 @@ public class Program {
 			this.input += in;
 		}
 		this.parser = new Parser(input);
+		this.parser.parse();
 		this.interpreter = new Interpreter();
 	}
 }
