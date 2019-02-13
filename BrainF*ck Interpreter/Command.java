@@ -3,12 +3,12 @@ public class Command {
 	char label;
 
 	public Command(char s) {
-		label = s;
-		subData = "empty";
+		this.label = s;
+		this.subData = "empty";
 	}
 
 	public Command(char s, String b) {
-		label = s;
-		subData = b;
+		this.label = s;
+		this.subData = b;
 	}
 }
